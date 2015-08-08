@@ -12,7 +12,6 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.use('ecmascript');
   api.addFiles('fetch.js', 'server');
 
   api.addFiles(
@@ -25,7 +24,6 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use('ecmascript');
   api.use('tinytest');
   api.use('timbrandin:fetch');
   api.addFiles('fetch-tests.js');
